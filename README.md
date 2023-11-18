@@ -48,3 +48,4 @@ Agora só chamar a stored
 
 call InserirPedido (4, '1 carrinho de controle', 115, now());
 ```
+![Produtos](tabela.png)
