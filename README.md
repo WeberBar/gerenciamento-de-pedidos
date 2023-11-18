@@ -6,7 +6,7 @@ Crie as tabelas "Clientes" e "Pedidos" com campos apropriados. Insira dados de e
 
 ```mysql
 create table clientes (
-	idCliente int primary key auto_increment,
+    idCliente int primary key auto_increment,
     nome varchar (80) not null,
     email varchar (100) not null,
     telefone varchar (11),
@@ -15,7 +15,7 @@ create table clientes (
 );
 
 create table pedidos (
-	idPedido int primary key auto_increment,
+    idPedido int primary key auto_increment,
     idClientePedido int references clientes (idCliente),
     descricao varchar (200) not null,
     valorTotal decimal (10,2) not null,
