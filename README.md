@@ -23,3 +23,28 @@ create table pedidos (
 );
 
 ```
+
+Etapa 2: Criação de Stored Procedure
+
+Crie uma stored procedure chamada "InserirPedido" que permite inserir um novo pedido na tabela "Pedidos" com as informações apropriadas. A stored procedure deve receber parâmetros como o ID do cliente e os detalhes do pedido. Ao término teste o funcionamento da stored procedure criada inserindo um pedido.
+
+```mysql
+delimiter $$
+create procedure InserirPedido (
+	in cliente int,
+    in descricaoPedido varchar (200),
+    in valorPedido decimal (10,2),
+    in data_pedido date
+)
+begin
+  insert into pedidos (idClientePedido, descricao, valorTotal, dataPedido)
+  values (cliente, descricaoPedido, valorPedido, data_pedido);
+end $$
+delimiter ;
+
+```
+Agora só chamar a stored
+```mysql
+
+call InserirPedido (4, '1 carrinho de controle', 115, now());
+```
