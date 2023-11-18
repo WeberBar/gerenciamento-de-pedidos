@@ -118,7 +118,6 @@ create view PedidosClientes as
 	order by c.nome;
     
     select * from PedidosClientes;
-    
 ```
 
 ![PedidosClientes](tabela5.png)
