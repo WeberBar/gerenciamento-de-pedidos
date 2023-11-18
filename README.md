@@ -50,7 +50,10 @@ update clientes set totalPedidos = 205.5 where idCliente = 1;
 update clientes set totalPedidos = 150 where idCliente = 2;
 update clientes set totalPedidos = 157.50 where idCliente = 3;
 ```
-![Produtos](tabela.png)
+clientes:
+![Clientes](tabela.png)
+pedidos:
+![pedidos](tabela2.png)
 ### Etapa 2: Criação de Stored Procedure
 
 Crie uma stored procedure chamada "InserirPedido" que permite inserir um novo pedido na tabela "Pedidos" com as informações apropriadas. A stored procedure deve receber parâmetros como o ID do cliente e os detalhes do pedido. Ao término teste o funcionamento da stored procedure criada inserindo um pedido.
@@ -76,7 +79,7 @@ Agora só chamar a stored
 call InserirPedido (4, '1 carrinho de controle', 115, now());
 ```
 
-![Produtos](tabela2.png)
+![Produtos](tabela3.png)
 ### Etapa 3: Trigger
 
 Crie uma trigger que seja acionada APÓS a inserção de um novo pedido na tabela "Pedidos". A trigger deve calcular o valor total dos pedidos para o cliente correspondente e atualizar um campo "TotalPedidos" na tabela "Clientes" com o valor total. Teste a Trigger inserindo um novo pedido na tabela "Pedidos“.
