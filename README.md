@@ -55,6 +55,7 @@ clientes:
 ![Clientes](tabela.png)
 
 pedidos:
+
 ![pedidos](tabela2.png)
 
 ### Etapa 2: Criação de Stored Procedure
