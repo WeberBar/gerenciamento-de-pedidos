@@ -1,8 +1,3 @@
-# gerenciamento-de-pedidos
-O exercício envolve na criação de um sistema de gerenciamento de pedidos para uma loja.
-
-Atividade: Sistema de Gerenciamento de Pedidos
-
 ## Objetivo: Criar um sistema de gerenciamento de pedidos em um banco de dados utilizando stored procedures, triggers, views e JOINs no MySQL Workbench.
 
 ### Etapa 1: Criação de Tabelas e Inserção de Dados
