@@ -107,3 +107,18 @@ select * from clientes;
 ![InserirPedido](tabela4.png)
 
 podemos ver que o cliente 4 atualizou o total de pedidos
+
+### Etapa 4: View
+
+Crie uma view chamada "PedidosClientes" que combina informações das tabelas "Clientes" e "Pedidos" usando JOIN para mostrar os detalhes dos pedidos e os nomes dos clientes.
+```mysql
+create view PedidosClientes as
+	select p.idPedido, c.nome, p.descricao, p.valorTotal, p.dataPedido
+	from pedidos p inner join clientes c on p.idClientePedido = c.idCliente
+	order by c.nome;
+    
+    select * from PedidosClientes;
+    
+```
+
+![PedidosClientes](tabela5.png)
