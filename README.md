@@ -76,3 +76,19 @@ Agora só chamar a stored
 call InserirPedido (4, '1 carrinho de controle', 115, now());
 ```
 ![Produtos](tabela.png)
+
+### Etapa 3: Trigger
+
+Crie uma trigger que seja acionada APÓS a inserção de um novo pedido na tabela "Pedidos". A trigger deve calcular o valor total dos pedidos para o cliente correspondente e atualizar um campo "TotalPedidos" na tabela "Clientes" com o valor total. Teste a Trigger inserindo um novo pedido na tabela "Pedidos“.
+
+```mysql
+delimiter $$
+create trigger AtualizarTotalPedidos
+after insert on pedidos
+for each row
+begin
+	update clientes set totalPedidos = totalPedidos + NEW.valorTotal
+	WHERE idCliente = NEW.idClientePedido;
+end $$
+delimiter ;
+```
