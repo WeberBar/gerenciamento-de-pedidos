@@ -52,7 +52,7 @@ Crie uma stored procedure chamada "InserirPedido" que permite inserir um novo pe
 ```mysql
 delimiter $$
 create procedure InserirPedido (
-	in cliente int,
+    in cliente int,
     in descricaoPedido varchar (200),
     in valorPedido decimal (10,2),
     in data_pedido date
