@@ -128,3 +128,6 @@ inner join clientes c on p.idClientePedido = c.idCliente;
 ```
 
 ![PedidosClientes](tabela6.png)
+
+### código:
+![Código](gerenciamento_de_pedidos.sql)
