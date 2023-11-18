@@ -34,6 +34,8 @@ VALUES
 ('Pedro Souza', 'pedro.souza@dominio.com', '11999999997', 'Rua do Comércio, 789 - Bairro, Cidade - SP'),
 ('Carlos Lima', 'carlos.lima@dominio.com', '11999999996', 'Travessa dos Artistas, 1010 - Bairro, Cidade - SP');
 ```
+
+Pedidos:
 ```mysql
 INSERT INTO Pedidos (idClientePedido, descricao, valorTotal, dataPedido)
 VALUES (1, '1 toalha de mesa bordada e 1 jogo americano', 145.50, '2023-03-14'),
