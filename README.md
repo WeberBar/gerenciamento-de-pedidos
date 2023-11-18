@@ -121,3 +121,10 @@ create view PedidosClientes as
 ```
 
 ![PedidosClientes](tabela5.png)
+
+```mysql
+select p.*,c.nome, c.totalPedidos from Pedidos p
+inner join clientes c on p.idClientePedido = c.idCliente;
+```
+
+![PedidosClientes](tabela6.png)
