@@ -101,5 +101,5 @@ delimiter ;
 ```
 Inserindo um produto para analisar o trigger:
 ```mysql
-call InserirPedido (1, '3 panos de prato bordados', 45, now());
+call InserirPedido (4, '3 panos de prato bordados', 45, now());
 ```
