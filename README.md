@@ -102,6 +102,8 @@ delimiter ;
 Inserindo um produto para analisar o trigger:
 ```mysql
 call InserirPedido (4, '3 panos de prato bordados', 45, now());
+select * from clientes;
 ```
 ![InserirPedido](tabela4.png)
 
+podemos ver que o cliente 4 atualizou o total de pedidos
